@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Slick Tommies</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -28,6 +28,7 @@
 
   <body data-spy="scroll" data-target="#navbarsExampleDefault" data-offset="50">
 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a id="navbar-brand" class="navbar-brand" href="#jumbotron"><img src="images/Top-Logo.png" alt="One Million Lines" title="One Million Lines"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,16 +48,40 @@
 
     <main role="main">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <!-- JUMBOTRON -->
       <div id="jumbotron" class="jumbotron">
         <div class="container">
           <h1>Our goal is to inspire <br>Tallahassee to write 1,000,000<br> lines of code_</h1>
           <p>All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by <strong>CODE.org</strong>. Millions of lines of code are being written. In the capital of Florida, Tallahassee, the community is taking the challenge and our goal is to write 1,000,000 lines of code</p>
-          <p><a class="btn btn-danger btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <p><a class="btn btn-danger btn-lg" href="#" role="button" data-toggle="modal" data-target="#myModal">Learn more &raquo;</a></p>
+
+          <!-- MODAL -->
+          <div class="modal" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSlickTommies%2Fvideos%2F829234630612779%2F&show_text=0&width=650&height=380" width="650" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button id="close-button" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CODE.ORG LOGO -->
           <img src="images/code.png" title="Code.org logo" alt="Code.org">
         </div>
       </div>
 
+      <!-- WHO ARE WE? -->
       <div id="who">  
         <div class="container homepage">
           <img src="images/Academy-Brand-Med.png" alt="MASSIVE Academy" title="MASSIVE Academy">
@@ -66,8 +91,8 @@
         </div>
       </div>
       
+      <!-- GET INVOLVED -->
       <div id="get-involved">
-
         <div class="container homepage">
           <h2>Get Involved</h2>
           <hr>
